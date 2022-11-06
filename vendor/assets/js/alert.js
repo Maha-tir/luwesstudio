@@ -1,9 +1,9 @@
 $(function () {
 	var Toast = Swal.mixin({
 		toast: true,
-		position: "top-end",
+		position: "top",
 		showConfirmButton: false,
-		timer: 3000,
+		timer: 1500,
 	});
 
 	$(".logout-action").on("click", function (e) {

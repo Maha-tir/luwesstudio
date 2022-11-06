@@ -9,4 +9,6 @@
                     echo "auth";
                 } else if ($this->uri->segment(2) == "store") {
                     echo "store";
+                } else if ($this->uri->segment(1) == "detail") {
+                    echo "dashboard";
                 } ?>" id="app">
