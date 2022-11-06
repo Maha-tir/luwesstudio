@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Booking Photo Studio | Photo Studio - Web Apps</title>
+    <meta name="keywords" content="Booking Photo Studio" />
+    <meta name="description" content="PhotoStudio - Web Apps" />
+    <meta name="author" content="photostudio.net" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/toastr/toastr.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/boxicons-2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/fontawesome-6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/ui.css" />
+  </head>
+  <body class="mobile-screen">
+    <div id="app">
+      <div class="app-idx-dashboard">
+        <div class="app-dashboard-brand-logo"></div>
+        <div class="app-dashboard-brand-details">
+          <h1 class="app-brand-title">PhotoStudio</h1>
+        </div>
+      </div>
+      <div class="app-sticky-dashboard" style="top: 0px">
+        <button
+          type="button"
+          class="btn-simple"
+          onclick="window.history.back()"
+        >
+          <div class="btn-icon">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+        </button>
+        <span style="font-weight: 600">Confrim Booking</span>
+        <button type="button" class="btn-simple">
+          <div class="btn-icon">
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </div>
+        </button>
+      </div>
+      <div class="app-dashboard-content pt-4 pb-5">
+        <div class="content-padding">
+          <form action="" method="post" class="form-validation pb-5">
+            <div class="card-booking">
+              <p class="date-book">Saturday, October 22, 2022</p>
+              <p class="time-book">10:00 AM - 10:30 AM</p>
+              <div class="timezone-book">
+                <div class="icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+                <span>Asia/Jakarta</span>
+              </div>
+            </div>
+            <div class="cfr-input-field">
+              <label for="full_name" class="cfr-input-label">Full Name</label>
+              <input
+                type="text"
+                name="full_name"
+                id="full_name"
+                class="cfr-input-control"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="cfr-input-field">
+              <label for="email" class="cfr-input-label">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="cfr-input-control"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+            <div class="cfr-input-field">
+              <label for="phone_whatsapp" class="cfr-input-label"
+                >Phone number (Whatsapp)</label
+              >
+              <input
+                type="phone"
+                name="phone_whatsapp"
+                id="phone_whatsapp"
+                class="cfr-input-control"
+                placeholder="+62 891-234-567-89"
+                required
+              />
+            </div>
+            <div class="cfr-input-field">
+              <label for="package" class="cfr-input-label"> Package </label>
+              <div class="app-select-dropdown">
+                <div class="app-select-dropdown-header">
+                  <div class="app-select-placeholder">
+                    <input
+                      type="text"
+                      name="package"
+                      id="package"
+                      class="app-select-input-placeholder"
+                      required
+                      placeholder="Please Choose"
+                    />
+                  </div>
+                  <div class="app-select-icon-placeholder">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="app-select-dropdown-menu">
+                  <li class="app-select-dropdown-list select-option">List 1</li>
+                  <li class="app-select-dropdown-list select-option">List 2</li>
+                  <li class="app-select-dropdown-list select-option">List 3</li>
+                  <li class="app-select-dropdown-list select-option">List 4</li>
+                </ul>
+              </div>
+            </div>
+            <p style="margin: 0; font-size: 13px; color: #7c7c7c">
+              *For student package proof with student card ID
+            </p>
+            <p style="margin: 0; font-size: 13px; color: #7c7c7c">
+              *For Maternity/Prewedding use 2 Slot time booking
+            </p>
+            <div class="cfr-input-field">
+              <label for="person" class="cfr-input-label">
+                Number of Person
+              </label>
+              <div class="app-select-dropdown">
+                <div class="app-select-dropdown-header">
+                  <div class="app-select-placeholder">
+                    <input
+                      type="text"
+                      name="person"
+                      id="person"
+                      class="app-select-input-placeholder"
+                      required
+                      placeholder="Please Choose"
+                    />
+                  </div>
+                  <div class="app-select-icon-placeholder">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="app-select-dropdown-menu">
+                  <li class="app-select-dropdown-list select-option">List 1</li>
+                  <li class="app-select-dropdown-list select-option">List 2</li>
+                  <li class="app-select-dropdown-list select-option">List 3</li>
+                  <li class="app-select-dropdown-list select-option">List 4</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cfr-input-field">
+              <label for="photo_type" class="cfr-input-label">
+                Photo Type
+              </label>
+              <div class="app-select-dropdown">
+                <div class="app-select-dropdown-header">
+                  <div class="app-select-placeholder">
+                    <input
+                      type="text"
+                      name="photo_type"
+                      id="photo_type"
+                      class="app-select-input-placeholder"
+                      required
+                      placeholder="Please Choose"
+                    />
+                  </div>
+                  <div class="app-select-icon-placeholder">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="app-select-dropdown-menu">
+                  <li class="app-select-dropdown-list select-option">List 1</li>
+                  <li class="app-select-dropdown-list select-option">List 2</li>
+                  <li class="app-select-dropdown-list select-option">List 3</li>
+                  <li class="app-select-dropdown-list select-option">List 4</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cfr-input-field">
+              <label for="background_color" class="cfr-input-label">
+                Background Color
+              </label>
+              <div class="app-select-dropdown">
+                <div class="app-select-dropdown-header">
+                  <div class="app-select-placeholder">
+                    <input
+                      type="text"
+                      name="background_color"
+                      id="background_color"
+                      class="app-select-input-placeholder"
+                      required
+                      placeholder="Please Choose"
+                    />
+                  </div>
+                  <div class="app-select-icon-placeholder">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="app-select-dropdown-menu">
+                  <li class="app-select-dropdown-list select-option">List 1</li>
+                  <li class="app-select-dropdown-list select-option">List 2</li>
+                  <li class="app-select-dropdown-list select-option">List 3</li>
+                  <li class="app-select-dropdown-list select-option">List 4</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cfr-input-field">
+              <label for="pets" class="cfr-input-label">
+                Im coming with my pet(s)
+              </label>
+              <div class="app-select-dropdown">
+                <div class="app-select-dropdown-header">
+                  <div class="app-select-placeholder">
+                    <input
+                      type="text"
+                      name="pets"
+                      id="pets"
+                      class="app-select-input-placeholder"
+                      required
+                      placeholder="Please Choose"
+                    />
+                  </div>
+                  <div class="app-select-icon-placeholder">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="app-select-dropdown-menu">
+                  <li class="app-select-dropdown-list select-option">List 1</li>
+                  <li class="app-select-dropdown-list select-option">List 2</li>
+                  <li class="app-select-dropdown-list select-option">List 3</li>
+                  <li class="app-select-dropdown-list select-option">List 4</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cfr-input-field">
+              <label for="allow_share" class="cfr-input-label">
+                Allow our staff to share your moments on our instagram
+                @portrastudio_id
+              </label>
+              <div class="app-select-dropdown">
+                <div class="app-select-dropdown-header">
+                  <div class="app-select-placeholder">
+                    <input
+                      type="text"
+                      name="allow_share"
+                      id="allow_share"
+                      class="app-select-input-placeholder"
+                      required
+                      placeholder="Please Choose"
+                    />
+                  </div>
+                  <div class="app-select-icon-placeholder">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="app-select-dropdown-menu">
+                  <li class="app-select-dropdown-list select-option">List 1</li>
+                  <li class="app-select-dropdown-list select-option">List 2</li>
+                  <li class="app-select-dropdown-list select-option">List 3</li>
+                  <li class="app-select-dropdown-list select-option">List 4</li>
+                </ul>
+              </div>
+            </div>
+            <button type="submit" class="btn-idx-Scmq Xs12-xda">
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+        <p class="py-3 m-0 text-center" style="color: #889196; font-size: 14px">
+          Powered by PhotoStudio
+        </p>
+      </div>
+    </div>
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./plugins/toastr/toastr.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

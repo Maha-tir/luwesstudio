@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Booking Photo Studio | Photo Studio - Web Apps</title>
+    <meta name="keywords" content="Booking Photo Studio" />
+    <meta name="description" content="PhotoStudio - Web Apps" />
+    <meta name="author" content="photostudio.net" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/toastr/toastr.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/boxicons-2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/fontawesome-6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/ui.css" />
+  </head>
+  <body class="mobile-screen on-dashboard">
+    <div class="dashboard" id="app">
+      <div class="app-dashboard-header justify-content-center text-cv py-3">
+        <button class="btn-back" onclick="window.history.back()">
+          <div class="icon">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <span class="display">Back</span>
+        </button>
+        <span
+          class="dashboard-logo-name"
+          style="font-family: Inter, sans-serif !important; font-weight: 600"
+          >Edit Booking Time</span
+        >
+      </div>
+      <div class="app-dashboard-bottom-bar">
+        <ul class="app-dashboard-nav-menu">
+          <li class="app-dashboard-nav-list">
+            <a href="dashboard.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-home-alt"></i></div>
+              <span class="display">Dashboard</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="customer.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-user"></i></div>
+              <span class="display">Customer</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="request-booking.html" class="app-dashboard-nav-link">
+              <span class="badge-nav-link">10</span>
+              <div class="icon"><i class="bx bx-bell"></i></div>
+              <span class="display">Request Book</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="store.html" class="app-dashboard-nav-link active">
+              <div class="icon"><i class="bx bxs-store"></i></div>
+              <span class="display">Store</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="app-dashboard-content">
+        <div class="content-padding">
+          <form action="" method="post">
+            <div class="cfr-input-field">
+              <label for="booking_time" class="cfr-input-label">
+                Booking Time
+              </label>
+              <input
+                type="time"
+                name="booking_time"
+                id="booking_time"
+                class="cfr-input-control"
+                placeholder="Booking time"
+                value="09:00"
+                required
+              />
+            </div>
+            <div class="cfr-input-field">
+              <label for="due_date" class="cfr-input-label"> Due Date </label>
+              <input
+                type="time"
+                name="due_date"
+                id="due_date"
+                class="cfr-input-control"
+                placeholder="due date"
+                value="09:30"
+                required
+              />
+            </div>
+            <div class="d-flex align-items-center justify-content-end mt-2">
+              <button type="button" class="btn-save">Save Changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form_validation" method="post">
+      <input type="text" class="name" placeholder="name" />
+      <input type="text" class="email" placeholder="email" />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const form = document.querySelector(".form_validation"),
+        name = document.querySelector(".name"),
+        email = document.querySelector(".email"),
+        msg = document.querySelector("#message");
+
+      function sendMsg(e) {
+        e.preventDefault();
+        Email.send({
+          SecureToken: "155103a5-e755-4ba7-af9d-29dc95f9a838",
+          To: "puloh1510@gmail.com",
+          From: "puloh1510@gmail.com",
+          Subject: "Testing",
+          Body: msg.value,
+        }).then((message) => alert(message));
+      }
+
+      form.addEventListener("submit", sendMsg);
+    </script>
+  </body>
+</html>

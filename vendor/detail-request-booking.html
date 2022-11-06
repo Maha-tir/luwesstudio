@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Booking Photo Studio | Photo Studio - Web Apps</title>
+    <meta name="keywords" content="Booking Photo Studio" />
+    <meta name="description" content="PhotoStudio - Web Apps" />
+    <meta name="author" content="photostudio.net" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/toastr/toastr.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/boxicons-2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/fontawesome-6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/ui.css" />
+  </head>
+  <body class="mobile-screen on-dashboard">
+    <div class="dashboard" id="app">
+      <div class="app-dashboard-header justify-content-center text-cv py-3">
+        <button class="btn-back" onclick="window.history.back()">
+          <div class="icon">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <span class="display">Back</span>
+        </button>
+        <span
+          class="dashboard-logo-name"
+          style="font-family: Inter, sans-serif !important; font-weight: 600"
+        >
+          Detail Request Booking
+        </span>
+      </div>
+      <div class="app-dashboard-bottom-bar">
+        <ul class="app-dashboard-nav-menu">
+          <li class="app-dashboard-nav-list">
+            <a href="dashboard.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-home-alt"></i></div>
+              <span class="display">Dashboard</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="customer.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-user"></i></div>
+              <span class="display">Customer</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="request-booking.html" class="app-dashboard-nav-link">
+              <span class="badge-nav-link">10</span>
+              <div class="icon"><i class="bx bx-bell"></i></div>
+              <span class="display">Request Book</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="store.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-store"></i></div>
+              <span class="display">Store</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="app-dashboard-content">
+        <div style="overflow-x: auto; width: 100%">
+          <form action="" method="post">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="th-of-txs">Customer</th>
+                  <th scope="col" class="th-of-txs"></th>
+                  <th scope="col" class="th-of-txs"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Full Name</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="full_name"
+                        id="full_name"
+                        placeholder="Jhon Doe"
+                        value="Jhon Doe"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Email</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        value="example@gmail.com"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Phone number (Whatsapp)</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="+62 812-345-678-912"
+                        value="+62 812-345-678-912"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Package</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="package"
+                        id="package"
+                        placeholder="Couple"
+                        value="Couple"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Number of Person</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="person"
+                        id="person"
+                        placeholder="Jhon Doe"
+                        value="Jhon Doe"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Photo Type</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="photo_type"
+                        id="photo_type"
+                        placeholder="Monochrome"
+                        value="Jhon Doe"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Background Color</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="background"
+                        id="background"
+                        placeholder="White"
+                        value="White"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Im coming with my pet(s)</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="pets"
+                        id="pets"
+                        placeholder="No one's pets "
+                        value="No one's pets "
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Allow Share</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="allow_share"
+                        id="allow_share"
+                        placeholder="Yes"
+                        value="Yes"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <span class="detail-span">Status</span>
+                    </div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">:</div>
+                  </td>
+                  <td class="td-of-txs">
+                    <div class="td-on-cst">
+                      <input
+                        type="text"
+                        name="status"
+                        id="status"
+                        placeholder="Requesting"
+                        value="Requesting"
+                        class="input-off"
+                        readonly
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="content-padding">
+              <button type="submit" class="ath-btn-sgc mt-0">
+                Receive booking
+              </button>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#discard-booking"
+                class="ath-btn-sgc bg-scX mt-0"
+                style="color: #ff0000 !important"
+              >
+                Delete request booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="discard-booking"
+        tabindex="-1"
+        aria-labelledby="discard-booking"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="msg-img-alert">
+                <img
+                  src="./assets/img/vector/delete.png"
+                  alt="_Delete-request-booking"
+                />
+              </div>
+              <h1 class="msg-title">Delete request booking</h1>
+              <p class="msg-text">
+                Are you sure you want to delete this booking request?
+              </p>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#discard-booking"
+                  class="ath-btn-sgc bg-scX"
+                  style="padding: 0.5rem 0.894rem; font-size: 13px"
+                  style="color: #ff0000 !important"
+                >
+                  Cancel
+                </button>
+                <a
+                  href="delete"
+                  class="ath-btn-sgc"
+                  style="padding: 0.5rem 0.6784rem; font-size: 13px"
+                >
+                  Delete Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./plugins/toastr/toastr.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

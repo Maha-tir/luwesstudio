@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Booking Photo Studio | Photo Studio - Web Apps</title>
+    <meta name="keywords" content="Booking Photo Studio" />
+    <meta name="description" content="PhotoStudio - Web Apps" />
+    <meta name="author" content="photostudio.net" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/toastr/toastr.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/boxicons-2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/fontawesome-6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/ui.css" />
+  </head>
+  <body class="mobile-screen on-dashboard">
+    <div id="app">
+      <div class="app-dashboard-header">
+        <div class="dashboard-logo">
+          <div class="icon"><ion-icon name="camera"></ion-icon></div>
+          <span class="dashboard-logo-name">PhotoStudio</span>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn-toggle-dropdown dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="avatar avatar-sm">
+              <img src="./assets/img/avatar/avatar-1.jpg" alt="_profile-img" />
+            </div>
+          </button>
+          <ul
+            class="dropdown-menu app-dropdown-menu"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <div class="app-profile-dropdown">
+              <div class="avatar avatar-lg">
+                <img
+                  src="./assets/img/avatar/avatar-1.jpg"
+                  alt="_profile-img"
+                />
+              </div>
+              <div class="d-block">
+                <h1
+                  class="txt mb-0"
+                  style="font-size: 14px; color: var(--dark-color)"
+                >
+                  Administrator
+                </h1>
+                <p
+                  class="txt m-0"
+                  style="font-size: 13px; color: var(--dark-color)"
+                >
+                  example@gmail.com
+                </p>
+              </div>
+            </div>
+            <li>
+              <a class="dropdown-item app-dropdown-link" href="store.html"
+                ><div class="icon">
+                  <ion-icon name="storefront-outline"></ion-icon>
+                </div>
+                Store</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item app-dropdown-link" href="settings.html"
+                ><div class="icon">
+                  <ion-icon name="cog-outline"></ion-icon>
+                </div>
+                Settings</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item app-dropdown-link" href="#"
+                ><div class="icon">
+                  <ion-icon name="power-outline"></ion-icon>
+                </div>
+                Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="app-dashboard-bottom-bar">
+        <ul class="app-dashboard-nav-menu">
+          <li class="app-dashboard-nav-list">
+            <a href="dashboard.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-home-alt"></i></div>
+              <span class="display">Dashboard</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="customer.html" class="app-dashboard-nav-link">
+              <div class="icon"><i class="bx bx-user"></i></div>
+              <span class="display">Customer</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="request-booking.html" class="app-dashboard-nav-link">
+              <span class="badge-nav-link">10</span>
+              <div class="icon"><i class="bx bx-bell"></i></div>
+              <span class="display">Request Book</span>
+            </a>
+          </li>
+          <li class="app-dashboard-nav-list">
+            <a href="store.html" class="app-dashboard-nav-link active">
+              <div class="icon"><i class="bx bxs-store"></i></div>
+              <span class="display">Store</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="app-dashboard-content">
+        <ul class="menu-list-app-store mt-4">
+          <li class="list-app-store">
+            <a href="background-color.html" class="link-app-store">
+              <div class="icon"><i class="bx bxs-palette"></i></div>
+              <span class="display">Background Color</span>
+            </a>
+          </li>
+          <li class="list-app-store">
+            <a href="booking-time.html" class="link-app-store">
+              <div class="icon"><i class="bx bxs-time"></i></div>
+              <span class="display">Booking time</span>
+            </a>
+          </li>
+          <li class="list-app-store">
+            <a href="package.html" class="link-app-store">
+              <div class="icon">
+                <i class="bx bxs-package"></i>
+              </div>
+              <span class="display">Package</span>
+            </a>
+          </li>
+          <li class="list-app-store">
+            <a href="photo-type.html" class="link-app-store">
+              <div class="icon"><i class="bx bxs-image"></i></div>
+              <span class="display">Photo Type</span>
+            </a>
+          </li>
+
+          <li class="list-app-store">
+            <a href="profile.html" class="link-app-store">
+              <div class="icon"><i class="bx bxs-user"></i></div>
+              <span class="display">My Profile</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-list-app-store mt-4">
+          <li class="list-app-store">
+            <a
+              href="index.html"
+              class="link-app-store text-center justify-content-center logout-action"
+              style="padding-top: 6px; padding-bottom: 6px"
+            >
+              <span
+                class="display"
+                style="font-size: 16px; font-weight: 500; color: #ff0000"
+                >Logout</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/alert.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./plugins/toastr/toastr.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
