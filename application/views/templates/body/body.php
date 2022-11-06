@@ -3,7 +3,7 @@
                             } else if ($this->uri->segment(1) == "auth") {
                                 echo "on-auth";
                             } ?>">
-    <div class="<?php if ($this->uri->segment(1) == "admin") {
+    <div class="<?php if ($this->uri->segment(1) == "admin" && $this->uri->segment(2) != "store") {
                     echo "dashboard";
                 } else if ($this->uri->segment(1) == "auth") {
                     echo "auth";

@@ -128,7 +128,7 @@ class Auth extends CI_Controller
                 "email" => $email,
                 "password" => password_hash($this->input->post("password", true), PASSWORD_DEFAULT),
                 "image" => "default.jpg",
-                "gender" => htmlspecialchars($this->input->post("gender", true)),
+                "gender" => strtolower(htmlspecialchars($this->input->post("gender", true))),
                 "is_active" => 1,
                 "date_created" => time()
             ];
@@ -151,7 +151,7 @@ class Auth extends CI_Controller
         $this->session->unset_userdata("date_created");
         $this->session->unset_userdata("email");
 
-        $this->session->set_flashdata("message", "<div class='flashdata-error' data-flashdata='You have successfully logged out'></div>");
+        $this->session->set_flashdata("message", "<div class='flashdata-success' data-flashdata='You have successfully logged out'></div>");
         redirect("auth/login");
     }
 }
