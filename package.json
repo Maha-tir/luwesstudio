@@ -1,0 +1,25 @@
+{
+  "name": "luwesstudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maha-tir/luwesstudio.git"
+  },
+  "keywords": [
+    "luwesstudio",
+    "booking",
+    "photo",
+    "studio"
+  ],
+  "author": "estedio team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maha-tir/luwesstudio/issues"
+  },
+  "homepage": "https://github.com/Maha-tir/luwesstudio#readme"
+}
